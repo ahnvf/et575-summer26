@@ -77,6 +77,26 @@ int main(){
     int never = username.find("NEVER");
     cout<<"Index of NEVER = "<< never <<endl;
 
+    cout<<"\n ---- Example 10: COmbine methods ----"<<endl;
+    // Add string m in username starting NEVER
+    cout<<username<<endl;
+    cout<<m<<endl;
+    // Find the index for 123
+    int index123 = username.find("123");
+    // Add value of string m before from index123
+    username.insert(index123, m);
+    cout<<username<<endl;
+
+    cout<<"\n ---- Practice Exam 1 ----"<<endl;
+    // Code tracing
+    string password = "PeterPan123";
+    int a = password.length(); // a = 11
+    int b = a - 5; // b = 6
+    // What is the character in string password at index b? Answer = character "a"
+    password.replace(b,3,"NONE");
+
+    cout<<"\n ---- EXERCISE ----"<<endl;
+
 
     return 0;
 }

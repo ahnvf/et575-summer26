@@ -96,7 +96,24 @@ int main(){
     password.replace(b,3,"NONE");
 
     cout<<"\n ---- EXERCISE ----"<<endl;
+    // ask the user to type a word and save in new_word
+    string new_word;
+    cout<<"Type a word: ";
+    cin>>new_word;
 
+    // print the 4th character (index 3)
+    cout<<"The 4th character is: "<<new_word[3]<<endl;
+
+    // find and print the length of the word
+    cout<<"The length of the word is: "<<new_word.length()<<" characters."<<endl;
+
+    // replace three characters from the second character (index 1) with "-- $ --"
+    new_word.replace(1, 3, "-- $ --");
+    cout<<"After replacement: "<<new_word<<endl;
+
+    // remove two characters from the end
+    new_word.erase(new_word.length()-2, 2);
+    cout<<"After removing two characters from the end: "<<new_word<<endl;
 
     return 0;
 }

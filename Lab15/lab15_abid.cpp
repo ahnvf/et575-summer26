@@ -1,7 +1,7 @@
 /*
 Ahnaf Abid
 June 12, 2026
-lab 15, recursive function, built-function
+Lab 15: recursive function, built-function
 */
 #include<iostream>
 #include "lab15_function_abid.cpp"
